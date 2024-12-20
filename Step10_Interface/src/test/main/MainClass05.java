@@ -22,6 +22,18 @@ public class MainClass05 {
 		
 		//매개변수에 전달된 두 숫자를 더한 값을 리턴하는 동작
 		Calc plus = (a, b) -> a+b;
+		//매개변수에 전달된 두 숫자를 뺀 값을 리턴하는 동작
+		Calc minus = (a, b) -> a-b;
+		//매개변수에 전달된 두 숫자를 곱한 값을 리턴하는 동작
+		Calc multiple = (a, b) -> a*b;
+		//매개변수에 전달된 두 숫자를 나눈 값을 리턴하는 동작
+		Calc divide = (a, b) -> a/b;
+		
+		double result1 = plus.execute(10, 10);
+		double result2 = minus.execute(10, 10);
+		double result3 = multiple.execute(10, 10);
+		double result4 = divide.execute(10, 10);
+		
 	}
 
 }
